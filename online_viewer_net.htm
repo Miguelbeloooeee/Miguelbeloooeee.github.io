@@ -1,0 +1,1809 @@
+
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maison Peonía — Peonías preservadas Ultra Premium que duran meses</title>
+  <meta name="description" content="Obra de arte floral con peonías preservadas que duran meses. Arreglos Ultra Premium, envíos el mismo día en CDMX y Área Metropolitana. Diseña tu arreglo, elige tu paquete y finaliza por WhatsApp." />
+  <meta name="theme-color" content="#f4efe9" />
+  <meta property="og:title" content="Maison Peonía — Peonías preservadas Ultra Premium" />
+  <meta property="og:description" content="Arreglos florales Ultra Premium con peonías preservadas. Diseña y finaliza tu pedido por WhatsApp." />
+  <meta property="og:image" content="https://loremflickr.com/1200/630/peony,luxury,flowers" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --bg:#f4efe9;
+      --bg-2:#f7f3ee;
+      --card:#ffffff;
+      --ink:#171514;
+      --muted:#6f6864;
+      --line:#e8e1da;
+      --accent:#c8a66a;
+      --accent-2:#b48b49;
+      --rose:#f2dfe8;
+      --rose-2:#e6c3d3;
+      --success:#2a9d8f;
+      --danger:#b00020;
+      --shadow: 0 15px 45px rgba(38,32,27,.12), 0 4px 12px rgba(38,32,27,.08);
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --radius-sm: 10px;
+      --maxw: 1200px;
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background: radial-gradient(1200px 600px at 10% 0%, #f8f2ed 0%, var(--bg) 50%, #eee7df 100%);
+      color:var(--ink);
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif;
+      line-height:1.55;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:var(--maxw); margin-inline:auto; padding:0 24px}
+    .topbar{
+      background: linear-gradient(90deg, rgba(200,166,106,.22), rgba(230,195,211,.18));
+      color:#6a5d4a;
+      font-size:12.5px;
+      letter-spacing:.2px;
+      padding:10px 0;
+      backdrop-filter:saturate(130%) blur(6px);
+      position:relative;
+      z-index:30;
+    }
+    .topbar .actions{display:flex; gap:16px; align-items:center}
+    .badge-inline{
+      display:inline-flex; align-items:center; gap:8px;
+      background:rgba(255,255,255,.65);
+      border:1px solid rgba(200,166,106,.35);
+      color:#7a6a52;
+      border-radius:999px; padding:6px 12px;
+    }
+    .whats-inline{
+      display:inline-flex; align-items:center; gap:8px;
+      background:#e6f7ef; border:1px solid #c4ecd9; color:#1b7a5b;
+      border-radius:999px; padding:6px 12px;
+    }
+    .whats-inline svg{width:14px; height:14px}
+    /* Nav */
+    .nav{
+      position:sticky; top:0; z-index:40;
+      border-bottom:1px solid var(--line);
+      background: color-mix(in oklab, #fff 70%, #f7f3ee 30%);
+      backdrop-filter: blur(10px) saturate(120%);
+    }
+    .nav .row{display:flex; align-items:center; justify-content:space-between; padding:18px 0; gap:14px}
+    .brand{
+      font-family:"Cormorant Garamond", serif; font-weight:600; letter-spacing:.6px;
+      font-size:28px; display:flex; align-items:center; gap:10px;
+    }
+    .brand .mark{
+      width:36px; height:36px; border-radius:10px;
+      background: conic-gradient(from 220deg at 50% 50%, #e9cbd7, #f3e7d7, #dcc6a5, #e9cbd7);
+      border:1px solid rgba(199,166,106,.25); box-shadow:inset 0 0 0 1px rgba(255,255,255,.8), var(--shadow);
+      position:relative; overflow:hidden;
+    }
+    .brand .mark::after{
+      content:""; position:absolute; inset:-30%; background:
+        radial-gradient(120px 80px at 30% 20%, rgba(255,255,255,.7), transparent 60%),
+        radial-gradient(140px 90px at 70% 80%, rgba(255,255,255,.5), transparent 60%);
+      mix-blend-mode:overlay;
+      animation: shimmer 5s linear infinite;
+    }
+    @keyframes shimmer {0%{transform:translateX(-10%)}100%{transform:translateX(10%)}}
+    .menu{display:flex; gap:22px; font-size:14.5px; color:#4d4743}
+    .menu a{padding:8px 10px; border-radius:10px; transition: all .3s ease; position:relative}
+    .menu a:hover{color:#1f1a16; background:rgba(231,222,211,.6)}
+    .actions{display:flex; gap:12px; align-items:center}
+    .btn{
+      appearance:none; border:0; cursor:pointer; border-radius:999px;
+      padding:12px 18px; font-weight:600; font-size:14px; transition: all .25s ease; position:relative; overflow:hidden;
+    }
+    .btn-primary{
+      color:#2b2110; background:
+        linear-gradient(180deg, #f6e9d1, #e7d2a9);
+      border:1px solid rgba(200,166,106,.6);
+      box-shadow: 0 10px 30px rgba(200,166,106,.25);
+    }
+    .btn-primary:hover{ transform: translateY(-1px); box-shadow:0 16px 36px rgba(200,166,106,.3)}
+    .btn-ghost{ background:#fff; border:1px solid var(--line); color:#4a433e}
+    .btn-ghost:hover{ background:#f8f4ef}
+    .btn-dark{ background:#1d1a16; color:#fff}
+    .btn-dark:hover{ background:#151310}
+    .btn-badge{
+      font-weight:700; font-size:12px; padding:8px 12px; border-radius:999px; border:1px solid var(--line);
+      background:#fff; color:#5a524d; letter-spacing:.2px;
+    }
+    /* Hero */
+    .hero{
+      position:relative; isolation:isolate; overflow:hidden;
+      background:
+        radial-gradient(60% 80% at 80% 10%, rgba(233,203,215,.35), transparent 60%),
+        radial-gradient(40% 60% at 10% 80%, rgba(200,166,106,.22), transparent 60%);
+    }
+    .hero .inner{
+      display:grid; grid-template-columns: 1.1fr .9fr; align-items:center; gap:40px;
+      padding:72px 0 36px;
+    }
+    .hero h1{
+      font-family:"Cormorant Garamond", serif; font-size: clamp(42px, 6vw, 74px);
+      line-height: 1; letter-spacing:.6px; margin:0 0 18px; color:#1c1713;
+    }
+    .hero p.lead{font-size: clamp(16px, 1.6vw, 19px); color:#5d5651; margin:0 0 26px}
+    .hero .cta{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+    .hero .media{
+      position:relative; border-radius:24px; overflow:hidden; box-shadow: var(--shadow);
+      transform: translateZ(0);
+    }
+    .hero .media img{
+      width:100%; height:600px; object-fit:cover; filter:saturate(102%) contrast(100%) brightness(102%);
+      transform:scale(1.02);
+    }
+    .media::after{
+      content:""; position:absolute; inset:0; background:
+        linear-gradient(180deg, rgba(255,255,255,.0), rgba(0,0,0,.08));
+      pointer-events:none;
+    }
+    .floating-badges{
+      position:absolute; right:-12px; bottom:18px; display:flex; flex-direction:column; gap:10px; z-index:3;
+    }
+    .floating-badges .card{
+      background: rgba(255,255,255,.9);
+      backdrop-filter: blur(6px);
+      border:1px solid rgba(200,166,106,.35);
+      box-shadow: var(--shadow);
+      padding:10px 14px; border-radius:14px; font-size:12.5px; color:#574f49;
+      transform: translateZ(0);
+      animation: floatY 6s ease-in-out infinite;
+    }
+    .floating-badges .card:nth-child(2){animation-delay:1.2s}
+    @keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+    /* Trust strip */
+    .trust{padding:10px 0 24px; color:#7a736e}
+    .trust .logos{display:grid; grid-template-columns: repeat(5,1fr); gap:24px; align-items:center}
+    .logo-item{
+      background: #fff; border:1px solid var(--line); border-radius:14px; padding:16px;
+      display:flex; align-items:center; justify-content:center; height:60px; opacity:.9; transition: .25s;
+    }
+    .logo-item:hover{opacity:1; transform: translateY(-2px)}
+
+    /* Section */
+    section{padding:80px 0}
+    .section-title{
+      text-align:center; margin-bottom:36px;
+    }
+    .section-title h2{
+      font-family:"Cormorant Garamond", serif;
+      font-size: clamp(32px, 4.6vw, 46px);
+      margin:0 0 10px;
+    }
+    .section-title p{color:#6a625c; margin:0 auto; max-width:700px}
+    .grid{display:grid; gap:24px}
+    .grid-3{grid-template-columns: repeat(3,1fr)}
+    .grid-2{grid-template-columns: repeat(2,1fr)}
+    @media (max-width: 1024px){
+      .hero .inner{grid-template-columns: 1fr}
+      .trust .logos{grid-template-columns: repeat(3,1fr)}
+      .grid-3{grid-template-columns: 1fr 1fr}
+    }
+    @media (max-width: 720px){
+      .trust .logos{grid-template-columns: repeat(2,1fr)}
+      .grid-3,.grid-2{grid-template-columns: 1fr}
+    }
+
+    /* Cards / packages */
+    .card{
+      background: #fff; border:1px solid var(--line); border-radius: var(--radius-lg); overflow:hidden;
+      box-shadow: 0 8px 24px rgba(30,20,10,.06);
+      transition: transform .3s ease, box-shadow .3s ease;
+      position:relative;
+    }
+    .card:hover{ transform: translateY(-6px); box-shadow: 0 18px 42px rgba(30,20,10,.12)}
+    .card .media {height:260px}
+    .card .media img{width:100%; height:100%; object-fit:cover}
+    .card .body{padding:18px}
+    .card h3{font-family:"Cormorant Garamond", serif; font-size:26px; margin:6px 0 8px}
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      border:1px solid var(--line); color:#5b524a; border-radius:999px; padding:6px 10px; font-size:12.5px; background:#fff;
+    }
+    .chip.gold{border-color:rgba(200,166,106,.5); background:linear-gradient(180deg, #fff, #fff7e6); color:#6a5b3e}
+    .price{font-weight:700; font-size:22px; color:#1e1a16; margin:6px 0 4px}
+    .small{font-size:12.5px; color:#7a736e}
+    .list{display:flex; flex-direction:column; gap:8px; margin:14px 0}
+    .list li{list-style:none; padding-left:24px; position:relative; color:#524b46; font-size:14.5px}
+    .list li::before{
+      content:"✔"; position:absolute; left:0; top:-1px; color:#2a9d8f; font-weight:800; font-size:12px;
+      background:#e8f5f2; border-radius:6px; padding:2px 4px;
+    }
+    .card .foot{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:8px}
+
+    /* Designer */
+    .designer{
+      position:relative; background:
+        radial-gradient(80% 80% at 50% 0%, rgba(233,203,215,.22), transparent 60%),
+        linear-gradient(180deg, #f6f1eb, #f8f4ef);
+      border-top:1px solid var(--line);
+    }
+    .designer .wrap{display:grid; grid-template-columns: 1.05fr .95fr; gap:26px}
+    @media (max-width: 1024px){ .designer .wrap{grid-template-columns: 1fr} }
+    .panel{
+      background:#fff; border:1px solid var(--line); border-radius:20px; padding:18px; box-shadow: var(--shadow);
+    }
+    .panel h3{font-family:"Cormorant Garamond", serif; font-size:28px; margin:0 0 4px}
+    .subtle{color:#6c645e; font-size:13.5px}
+    .fieldset{display:grid; gap:14px; margin:14px 0 8px}
+    .row{display:grid; gap:14px; grid-template-columns: 1fr 1fr}
+    .row-3{grid-template-columns: repeat(3,1fr)}
+    @media (max-width: 720px){ .row, .row-3{grid-template-columns: 1fr}}
+    label{font-size:13px; color:#625a55; display:block; margin-bottom:6px}
+    .input, select, textarea{
+      width:100%; padding:12px 14px; border:1px solid var(--line); border-radius:12px;
+      background:#fff; color:#2e2723; font: inherit; outline:none; transition: border-color .2s, box-shadow .2s;
+    }
+    .input:focus, select:focus, textarea:focus{ border-color:#d9c3a0; box-shadow: 0 0 0 4px rgba(200,166,106,.14)}
+    .option-set{display:flex; flex-wrap:wrap; gap:10px}
+    .opt{
+      border:1px solid var(--line); background:#fff; color:#4b443f; padding:10px 14px; border-radius:12px; cursor:pointer;
+      transition:.2s; user-select:none;
+    }
+    .opt[data-active="true"]{ border-color:rgba(200,166,106,.8); background:linear-gradient(180deg, #fff, #fff8e9)}
+    .swatch{
+      width:18px; height:18px; border-radius:50%; border:1px solid rgba(0,0,0,.08);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.8);
+      margin-right:6px;
+    }
+    .hint{font-size:12.5px; color:#7a736e}
+    .divider{height:1px; background:var(--line); margin:14px 0}
+    .summary{
+      position:sticky; top:112px; display:flex; flex-direction:column; gap:12px;
+    }
+    .summary .tot{
+      display:flex; justify-content:space-between; align-items:center; border-top:1px dashed var(--line); padding-top:12px; margin-top:4px;
+      font-weight:700; font-size:18px;
+    }
+    .lineitem{display:flex; justify-content:space-between; gap:10px; font-size:14.5px; color:#4b443f}
+    .lineitem .muted{color:#857a73}
+    .note{font-size:12.5px; color:#6b6259}
+    .error{color:var(--danger); font-size:12.5px; display:none}
+    .invalid{border-color: #ffb3bd; box-shadow: 0 0 0 3px rgba(176,0,32,.08)}
+    .success{color: var(--success)}
+    .tag-pop{display:inline-flex; padding:6px 10px; border-radius:999px; background:#1e1a16; color:#fff; font-size:12px; letter-spacing:.2px}
+
+    /* Gallery */
+    .masonry{columns: 3 280px; column-gap: 16px}
+    .masonry .tile{
+      break-inside: avoid; margin-bottom:16px; border-radius:18px; overflow:hidden; border:1px solid var(--line); box-shadow: 0 8px 24px rgba(0,0,0,.06);
+      transition:.25s;
+    }
+    .masonry .tile:hover{transform: translateY(-4px)}
+    .masonry img{width:100%; height:auto; display:block; object-fit:cover}
+
+    /* Testimonials */
+    .testi{display:grid; grid-template-columns: repeat(3,1fr); gap:18px}
+    @media (max-width: 1024px){ .testi{grid-template-columns: 1fr 1fr} }
+    @media (max-width: 720px){ .testi{grid-template-columns: 1fr} }
+    .quote{
+      background:#fff; border:1px solid var(--line); border-radius:16px; padding:18px; box-shadow: var(--shadow)
+    }
+    .quote p{margin:0 0 10px; color:#4d4641}
+    .stars{color:#d4a64b; font-size:14px}
+
+    /* FAQ */
+    .faq .item{border:1px solid var(--line); border-radius:14px; background:#fff; overflow:hidden}
+    .faq .q{display:flex; justify-content:space-between; align-items:center; padding:16px; cursor:pointer}
+    .faq .a{padding:0 16px 16px; color:#554e48; display:none}
+    .faq .item[aria-expanded="true"] .a{display:block}
+
+    /* Contact & footer */
+    .contact{background:linear-gradient(180deg, #fff, #f7f3ee); border-top:1px solid var(--line)}
+    footer{padding:28px 0; color:#665f5a; border-top:1px solid var(--line); background:#fff}
+    .foot-grid{display:grid; grid-template-columns: 1.2fr .8fr .8fr; gap:18px}
+    @media (max-width: 920px){ .foot-grid{grid-template-columns: 1fr 1fr} }
+    @media (max-width: 680px){ .foot-grid{grid-template-columns: 1fr} }
+
+    /* Reveal on scroll */
+    .reveal{opacity:0; transform: translateY(16px); filter: blur(6px); transition: opacity .7s ease, transform .7s ease, filter .8s ease}
+    .reveal.in{opacity:1; transform: none; filter: none}
+
+    /* Petals */
+    .petals{position:absolute; inset:0; overflow:hidden; pointer-events:none}
+    .petal{
+      position:absolute; width:14px; height:10px; border-radius: 60% 40% 70% 30% / 40% 60% 40% 60%;
+      background: radial-gradient(circle at 30% 30%, #fff5f9 0%, #f0c8d7 70%, #e4a9bf 100%);
+      opacity:.6; filter: blur(.2px);
+      animation: fall 12s linear infinite;
+    }
+    @keyframes fall{
+      0%{transform:translate3d(var(--x), -10%, 0) rotate(0deg)}
+      100%{transform:translate3d(calc(var(--x) + 30px), 110%, 0) rotate(360deg)}
+    }
+
+    /* Toast */
+    .toast{
+      position: fixed; bottom: 24px; right: 24px; background:#1e1a16; color:#fff;
+      padding:12px 16px; border-radius:12px; box-shadow: 0 10px 24px rgba(0,0,0,.2); opacity:0; transform: translateY(10px);
+      transition:.3s; z-index:200;
+    }
+    .toast.show{opacity:1; transform:none}
+
+    /* Floating CTA cart */
+    .floating-summary{
+      position: fixed; left: 50%; transform: translateX(-50%); bottom: 18px; z-index:120; display:flex; gap:10px; align-items:center;
+      background: #1e1a16; color:#fff; border-radius:999px; padding:10px 14px; box-shadow: 0 12px 34px rgba(0,0,0,.28);
+      border:1px solid rgba(255,255,255,.06); display:none;
+    }
+    .floating-summary .sep{width:1px; height:24px; background:rgba(255,255,255,.12)}
+    .floating-summary .pill{background:#2a2520; padding:6px 10px; border-radius:999px; font-size:12.5px; border:1px solid rgba(255,255,255,.08)}
+    .floating-summary .btn{background:#f1e0b7; color:#211b14; padding:10px 14px}
+    .floating-summary .btn:hover{filter:brightness(.96)}
+
+    /* Modal preview */
+    .modal{position:fixed; inset:0; background:rgba(0,0,0,.45); display:none; align-items:center; justify-content:center; z-index:300; padding:18px}
+    .modal .box{background:#fff; border-radius:18px; border:1px solid var(--line); max-width:760px; width:100%; max-height:80vh; overflow:auto}
+    .modal .header{display:flex; justify-content:space-between; align-items:center; padding:14px 18px; border-bottom:1px solid var(--line)}
+    .modal .content{padding:18px}
+    .pre{white-space:pre-wrap; background:#fbfaf8; border:1px dashed var(--line); border-radius:12px; padding:12px; color:#3b3531; font-size:14px}
+
+    /* Image loading skeleton */
+    .lazyimg{
+      background: linear-gradient(100deg, #f3ede5 20%, #f8f4ef 40%, #f3ede5 60%);
+      background-size: 200% 100%;
+      animation: shimmerImg 1.5s infinite;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .lazyimg.loaded{ animation:none; background:none }
+    @keyframes shimmerImg {
+      0%{ background-position: 200% 0 }
+      100%{ background-position: -200% 0 }
+    }
+
+    /* Accessibility */
+    @media (prefers-reduced-motion: reduce){
+      *{animation:none !important; transition:none !important}
+    }
+    /* ----------  parallax strips (copiado tal cual del archivo 6)  ---------- */
+.strips{ border-radius:20px; overflow:hidden; box-shadow:0 30px 80px rgba(0,0,0,.55) }
+.strip{ position:relative; display:flex; overflow:hidden; border-top:1px solid rgba(255,255,255,.06); }
+.strip:first-child{ border-top:none; }
+.track{
+  display:flex; gap:12px; padding:14px; width:max-content;
+  animation:marquee var(--dur,40s) linear infinite;
+  will-change:transform;
+}
+@keyframes marquee{ from{ transform:translateX(0) } to{ transform:translateX(-50%) } }
+
+.tile2{
+  position:relative; width:clamp(180px,22vw,260px); height:clamp(120px,16vw,160px);
+  border-radius:16px; overflow:hidden; background:#0f0c15; box-shadow:0 12px 30px rgba(0,0,0,.35);
+  transform:translateZ(0);
+}
+.tile2 img{ width:100%; height:100%; object-fit:cover }
+.tile2 .ov{
+  position:absolute; inset:0; display:grid; place-items:end; padding:10px; color:#fff; font-size:13px;
+  background:radial-gradient(220px 140px at var(--x,50%) var(--y,50%), rgba(255,255,255,.12), transparent 55%);
+  opacity:0; transition:.25s;
+}
+.tile2:hover .ov{ opacity:1 }
+
+@media (prefers-reduced-motion:reduce){
+  .track{ animation:none !important; }
+}
+/* ------------------ Mobile-specific improvements (no desktop changes) ------------------ */
+@media (max-width: 720px){
+  /* Nav: make menu touch friendly and scrollable instead of wrapping */
+  .nav .row{padding:12px 0; gap:8px}
+  .brand{font-size:20px}
+  .menu{display:flex; gap:10px; overflow-x:auto; -webkit-overflow-scrolling:touch; padding-bottom:6px}
+  .menu a{flex:0 0 auto; padding:12px 14px; font-size:15px; white-space:nowrap}
+  /* Increase tappable areas for action buttons */
+  .actions .btn, .btn{padding:12px 16px; font-size:15px}
+
+  /* Hero: reduce padding and media height for small screens */
+  .hero .inner{padding:28px 0 18px}
+  .hero .media img{height:360px; object-fit:cover}
+
+  /* Cards & packages: smaller media height to avoid excessive scrolling */
+  .card .media{height:200px}
+  .card .media img{height:200px; object-fit:cover}
+
+  /* Designer: make inputs larger and full width */
+  .panel, .card, .summary, .panel .fieldset{padding:14px}
+  .input, select, textarea{padding:14px; font-size:16px}
+
+  /* Summary: disable sticky on mobile to avoid covering content */
+  .summary{position:static; top:auto}
+
+  /* Masonry gallery -> single column for readable feed */
+  .masonry{columns:1 !important; column-gap:12px}
+  .masonry .tile{margin-bottom:14px}
+
+  /* Hide non-essential decorative overlays that clash with small screens */
+  .petals{display:none}
+  .floating-badges{display:none}
+
+  /* Modal: better fit on small screens */
+  .modal .box{max-width:94vw; margin:0 12px}
+
+  /* Footer links: larger tap targets */
+  footer a{display:inline-block; padding:8px 6px}
+}
+
+@media (max-width:420px){
+  /* Very small devices: tighten spacing further */
+  .menu a{padding:10px 12px; font-size:14px}
+  .hero .media img{height:300px}
+  .card .media{height:160px}
+  .card .media img{height:160px}
+  .brand{font-size:18px}
+  .section-title h2{font-size:26px}
+}
+
+/* Mobile menu overlay visuals */
+@media (max-width:720px){
+  #mobileMenuBtn{display:inline-flex !important}
+  /* hide the topbar toggle button on mobile as requested */
+  #topbarToggle{display:none !important}
+  #mobileMenuOverlay{
+    position:fixed; inset:0; z-index:220; display:none; align-items:flex-start; justify-content:flex-end;
+    background:rgba(0,0,0,0.38); backdrop-filter: blur(6px);
+  }
+  /* slide-in animation */
+  @keyframes slideInRight { from { transform: translateX(22px); opacity:0 } to { transform: translateX(0); opacity:1 } }
+  @keyframes slideOutRight { from { transform: translateX(0); opacity:1 } to { transform: translateX(22px); opacity:0 } }
+  #mobileMenuOverlay .panel{
+    width: min(86vw, 360px); height:100vh; padding:18px; border-radius:0; border-left:1px solid rgba(0,0,0,0.04);
+  box-shadow: -20px 0 60px rgba(0,0,0,0.28); overflow:auto; background: linear-gradient(180deg,#fff,#f7f3ee);
+  transform: translateX(0);
+  animation-duration: 220ms; animation-timing-function: cubic-bezier(.2,.9,.2,1);
+  }
+  #mobileMenuOverlay .panel .brand{font-size:20px}
+  #mobileMenuOverlay .menu{display:block; padding-top:12px}
+  #mobileMenuOverlay .menu a{display:block; padding:12px 10px; border-radius:10px; margin-bottom:6px; font-size:16px}
+  #mobileMenuOverlay .top-actions{display:flex; gap:8px; margin-top:18px}
+  #mobileMenuOverlay .badge-inline{display:block; margin-bottom:8px}
+  
+  /* Hide original nav/menu and actions to avoid clutter; show only mobile controls */
+  .nav .menu{display:none !important}
+  /* Convert topbar actions into a horizontal touch carousel so pills display fully without wrapping rows */
+  .nav .actions{display:flex !important; gap:8px; align-items:center}
+  .topbar .actions{display:flex; gap:10px; align-items:center; flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; scroll-snap-type:x mandatory; padding-bottom:6px}
+  .topbar .actions::-webkit-scrollbar{height:6px}
+  .topbar .actions::-webkit-scrollbar-thumb{background:rgba(0,0,0,0.06); border-radius:999px}
+  .topbar .actions .badge-inline{padding:8px 14px; font-size:13px; border-radius:999px; white-space:nowrap; flex:0 0 auto; scroll-snap-align:start; line-height:1.25; background: rgba(255,255,255,0.95); border:1px solid rgba(200,166,106,0.16); color:#6a5b48}
+  /* Ensure WhatsApp link remains prominent */
+  .whats-inline{flex:0 0 auto}
+  /* Position hamburger at the right edge on mobile for easy thumb reach */
+  .nav .row{position:relative}
+  #mobileMenuBtn{position:absolute; right:12px; top:50%; transform:translateY(-50%); margin-left:0; z-index:60}
+
+  /* Add safe margins to hero content on mobile so it doesn't touch device edges */
+  .hero .inner{padding-left:14px; padding-right:14px}
+
+  /* Hide right-side nav action buttons on mobile (Diseñar mi arreglo, Ver paquetes) */
+  .nav .actions a.btn-ghost[href="#disenador"],
+  .nav .actions a.btn-primary[href="#paquetes"]{
+    display:none !important;
+  }
+
+  /* small touch area for easier swipe (no topbarDetails element present) */
+}
+  </style>
+</head>
+<body>
+  <!-- PETALS DECOR -->
+  <div class="petals" aria-hidden="true" id="petals"></div>
+
+  <!-- Mobile menu overlay (only active on small screens) -->
+  <div id="mobileMenuOverlay" aria-hidden="true" style="display:none">
+    <!-- structure injected by JS for accessibility -->
+  </div>
+
+  <!-- Mobile topbar details panel removed -->
+
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
+      <div class="actions">
+        <span class="badge-inline">Envíos el mismo día en CDMX y Área Metropolitana</span>
+        <span class="badge-inline">Peonías preservadas que duran meses</span>
+      </div>
+  <a class="whats-inline" href="#contacto">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.8 11.8 0 0 0 12.01 0C5.4 0 .03 5.37.03 12c0 2.11.55 4.14 1.61 5.93L0 24l6.2-1.62A11.96 11.96 0 0 0 12 24c6.62 0 12-5.37 12-12 0-3.2-1.25-6.21-3.48-8.52zM12 21.8c-1.87 0-3.7-.5-5.3-1.45l-.38-.22-3.7.97.99-3.6-.25-.4A9.82 9.82 0 0 1 2.2 12C2.2 6.6 6.6 2.2 12 2.2c2.63 0 5.09 1.02 6.95 2.88A9.76 9.76 0 0 1 21.8 12c0 5.4-4.4 9.8-9.8 9.8zm5.54-7.35c-.3-.15-1.76-.86-2.03-.95-.27-.1-.47-.15-.68.15-.2.3-.78.95-.96 1.15-.18.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.89-.8-1.5-1.8-1.67-2.1-.17-.3-.02-.47.13-.62.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.62-.93-2.2-.25-.6-.5-.5-.68-.5h-.58c-.2 0-.52.08-.8.37-.27.3-1.06 1.03-1.06 2.5s1.08 2.9 1.23 3.1c.15.2 2.15 3.28 5.2 4.6.73.32 1.3.5 1.75.64.73.23 1.4.2 1.92.12.59-.09 1.76-.72 2-1.42.25-.7.25-1.3.18-1.42-.07-.12-.27-.2-.57-.35z"/></svg>
+        WhatsApp
+      </a>
+  <!-- topbar compact toggle removed for mobile (controlled via actions) -->
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <div class="nav">
+    <div class="container row">
+      <a class="brand" href="#">
+        <span class="mark" aria-hidden="true"></span>
+        Maison Peonía
+      </a>
+      <!-- Mobile menu button (only visible on mobile via CSS) -->
+      <button id="mobileMenuBtn" aria-controls="mobileMenuOverlay" aria-expanded="false" aria-label="Abrir menú" class="btn btn-ghost" style="display:none">
+        ☰
+      </button>
+      <nav class="menu" aria-label="Principal">
+        <a href="#paquetes">Paquetes</a>
+        <a href="#disenador">Diseñador</a>
+  <a href="galeria-completa.html">Galería</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="actions">
+        <a class="btn-ghost btn" href="#disenador">Diseñar mi arreglo</a>
+        <a class="btn btn-primary" href="#paquetes">Ver paquetes</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container inner">
+      <div>
+        <div class="tag-pop">Colección 2025</div>
+        <h1>Peonías preservadas que roban el aliento durante meses</h1>
+        <p class="lead">Arreglos Ultra Premium, diseñados a mano con peonías reales preservadas. Un lujo sensorial que perdura, con entrega el mismo día en CDMX. Crea el detalle perfecto y finaliza tu pedido por WhatsApp en segundos.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#disenador">Diseñar mi arreglo</a>
+          <a class="btn" style="background:#1e1a16;color:#fff" href="#galeria">Ver inspiración</a>
+          <span class="hint">Hecho a medida · Garantía de belleza por meses</span>
+        </div>
+      </div>
+      <div class="media reveal">
+        <img
+          class="lazyimg"
+          data-priority="high"
+          width="900" height="600"
+          alt="Peonías preservadas en caja de terciopelo"
+          referrerpolicy="no-referrer"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+          data-srcs="https://loremflickr.com/900/1200/peony,arrangement,velvet,flowers; https://picsum.photos/900/1200?random=21; https://placehold.co/900x1200/f2dfe8/e6c3d3?text=Peon%C3%ADas+Maison" />
+        <div class="floating-badges" aria-hidden="true">
+          <div class="card">Preservadas 6–12 meses</div>
+          <div class="card">Ediciones limitadas</div>
+        </div>
+      </div>
+    </div>
+    <div aria-hidden="true" style="height:16px"></div>
+    <div class="container trust reveal">
+      <div class="logos">
+        <div class="logo-item">Hecho a mano</div>
+        <div class="logo-item">Origen sostenible</div>
+        <div class="logo-item">Pago seguro</div>
+        <div class="logo-item">Envío mismo día</div>
+        <div class="logo-item">Garantía Maison</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAQUETES -->
+  <section id="paquetes">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Paquetes Ultra Premium</h2>
+        <p>Selecciona una curaduría con diseño profesional. Todos incluyen peonías preservadas de grado de exportación, presentación impecable, y dedicatoria personalizada.</p>
+      </div>
+      <div class="grid grid-3">
+        <!-- Essence -->
+        <article class="card reveal" data-tilt>
+          <div class="media">
+            <img class="lazyimg" width="800" height="600" alt="Paquete Essence - Caja con 12 peonías"
+                 referrerpolicy="no-referrer"
+                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+                 data-srcs="https://loremflickr.com/800/600/peony,box,blush; https://picsum.photos/800/600?random=11; https://placehold.co/800x600/f7eaf2/e0bfd6?text=Essence" />
+          </div>
+          <div class="body">
+            <span class="chip">Delicado y elegante</span>
+            <h3>Essence</h3>
+            <div class="price" data-price="4900">$4,900 MXN</div>
+            <ul class="list">
+              <li>12 peonías preservadas premium</li>
+              <li>Caja redonda de terciopelo (20 cm)</li>
+              <li>Paleta a elegir: Ivory, Blush o Mix Pastel</li>
+            </ul>
+            <div class="foot">
+              <span class="small">Ideal para detalles íntimos</span>
+              <button class="btn btn-ghost" onclick="selectPackage('essence')">Elegir</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Signature -->
+        <article class="card reveal" data-tilt>
+          <div class="media">
+            <img class="lazyimg" width="800" height="600" alt="Paquete Signature - 24 peonías preservadas"
+                 referrerpolicy="no-referrer"
+                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+                 data-srcs="https://loremflickr.com/800/600/peony,luxury,box; https://picsum.photos/800/600?random=12; https://placehold.co/800x600/f2ead7/d3b57a?text=Signature" />
+          </div>
+          <div class="body">
+            <span class="chip gold">Más vendido</span>
+            <h3>Signature</h3>
+            <div class="price" data-price="8900">$8,900 MXN</div>
+            <ul class="list">
+              <li>24 peonías preservadas premium</li>
+              <li>Caja de terciopelo con monograma (25 cm)</li>
+              <li>Tarjeta de lujo incluida</li>
+            </ul>
+            <div class="foot">
+              <span class="small">Presencia y sofisticación</span>
+              <button class="btn btn-primary" onclick="selectPackage('signature')">Elegir</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Grand Amour -->
+        <article class="card reveal" data-tilt>
+          <div class="media">
+            <img class="lazyimg" width="800" height="600" alt="Paquete Grand Amour - 36 peonías"
+                 referrerpolicy="no-referrer"
+                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+                 data-srcs="https://loremflickr.com/800/600/peony,arrangement,grand; https://picsum.photos/800/600?random=13; https://placehold.co/800x600/ecd9e6/c7a0ba?text=Grand+Amour" />
+          </div>
+          <div class="body">
+            <span class="chip">Edición de impacto</span>
+            <h3>Grand Amour</h3>
+            <div class="price" data-price="12900">$12,900 MXN</div>
+            <ul class="list">
+              <li>36 peonías preservadas seleccionadas</li>
+              <li>Presentación Couture (caja XL o jarrón de cristal)</li>
+              <li>Carta de cuidados y foto previa al envío</li>
+            </ul>
+            <div class="foot">
+              <span class="small">Para celebrar en grande</span>
+              <button class="btn btn-ghost" onclick="selectPackage('grand')">Elegir</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Imperial Couture -->
+        <article class="card reveal" data-tilt>
+          <div class="media">
+            <img class="lazyimg" width="800" height="600" alt="Paquete Imperial Couture - 64 peonías"
+                 referrerpolicy="no-referrer"
+                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+                 data-srcs="https://loremflickr.com/800/600/peony,couture,luxury; https://picsum.photos/800/600?random=14; https://placehold.co/800x600/efe2c7/c8a66a?text=Imperial+Couture" />
+          </div>
+          <div class="body">
+            <span class="chip gold">Edición limitada</span>
+            <h3>Imperial Couture</h3>
+            <div class="price" data-price="24900">$24,900 MXN</div>
+            <ul class="list">
+              <li>64 peonías preservadas de colección</li>
+              <li>Caja XXL o jarrón soplado a mano</li>
+              <li>Moño de seda y fragancia de peonía</li>
+            </ul>
+            <div class="foot">
+              <span class="small">La máxima expresión del lujo</span>
+              <button class="btn btn-ghost" onclick="selectPackage('imperial')">Elegir</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISEÑADOR -->
+  <section id="disenador" class="designer">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Diseña tu arreglo</h2>
+        <p>Crea una pieza única en tres pasos: elige tu base, personaliza la paleta y agrega extras. Completa los datos y finaliza el pedido por WhatsApp.</p>
+      </div>
+      <div class="wrap">
+        <!-- Builder -->
+        <div class="panel reveal" id="builder">
+          <h3>Personalización</h3>
+          <p class="subtle">Los detalles importan. Nosotros perfeccionamos el resto.</p>
+          <div class="fieldset">
+            <div class="row">
+              <div>
+                <label>Tipo de pedido</label>
+                <div class="option-set" role="group" aria-label="Tipo de pedido">
+                  <div class="opt" data-group="mode" data-value="paquete" data-active="true">Paquete</div>
+                  <div class="opt" data-group="mode" data-value="personalizado">Personalizado</div>
+                </div>
+                <div class="hint">Puedes elegir un paquete y aún así ajustar colores y extras.</div>
+              </div>
+              <div>
+                <label>Paquete</label>
+                <select class="input" id="packageSelect">
+                  <option value="signature" selected>Signature (24)</option>
+                  <option value="essence">Essence (12)</option>
+                  <option value="grand">Grand Amour (36)</option>
+                  <option value="imperial">Imperial Couture (64)</option>
+                  <option value="custom">Personalizado (por tallo)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="row">
+              <div>
+                <label>Paleta de color</label>
+                <div class="option-set" role="group" aria-label="Color" id="colorSet">
+                  <div class="opt" data-group="color" data-value="Ivory" data-active="true"><span class="swatch" style="background:#fff1f1"></span> Ivory</div>
+                  <div class="opt" data-group="color" data-value="Blush"><span class="swatch" style="background:#f2c9d8"></span> Blush</div>
+                  <div class="opt" data-group="color" data-value="Fucsia"><span class="swatch" style="background:#d22b7a"></span> Fucsia</div>
+                  <div class="opt" data-group="color" data-value="Borgoña"><span class="swatch" style="background:#6b1221"></span> Borgoña</div>
+                  <div class="opt" data-group="color" data-value="Mix Pastel"><span class="swatch" style="background:linear-gradient(90deg,#f2c9d8,#fff1f1)"></span> Mix Pastel</div>
+                </div>
+              </div>
+              <div>
+                <label>Presentación</label>
+                <div class="option-set" role="group" aria-label="Presentación">
+                  <div class="opt" data-group="presentacion" data-value="Caja redonda terciopelo" data-active="true">Caja redonda terciopelo</div>
+                  <div class="opt" data-group="presentacion" data-value="Caja cuadrada">Caja cuadrada</div>
+                  <div class="opt" data-group="presentacion" data-value="Jarrón de cristal">Jarrón de cristal</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row-3">
+              <div>
+                <label>Tamaño / Nº de peonías</label>
+                <select class="input" id="sizeSelect">
+                  <option value="12">12</option>
+                  <option value="24" selected>24</option>
+                  <option value="36">36</option>
+                  <option value="64">64</option>
+                </select>
+              </div>
+              <div>
+                <label>Fragancia</label>
+                <select class="input" id="fragancia">
+                  <option value="Sin fragancia" selected>Sin fragancia</option>
+                  <option value="Peonía blanca">Peonía blanca</option>
+                  <option value="Rosa empolvada">Rosa empolvada</option>
+                </select>
+              </div>
+              <div>
+                <label>Color de moño</label>
+                <select class="input" id="mono">
+                  <option value="Marfil" selected>Marfil</option>
+                  <option value="Rosa pálido">Rosa pálido</option>
+                  <option value="Burdeos">Burdeos</option>
+                  <option value="Negro">Negro</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label>Extras</label>
+              <div class="option-set" role="group" aria-label="Extras" id="extrasSet">
+                <div class="opt" data-group="extra" data-price="900" data-value="Caja con monograma">Caja con monograma +$900</div>
+                <div class="opt" data-group="extra" data-price="600" data-value="Fragancia de peonía">Fragancia de peonía +$600</div>
+                <div class="opt" data-group="extra" data-price="250" data-value="Moño de seda">Moño de seda +$250</div>
+                <div class="opt" data-group="extra" data-price="180" data-value="Tarjeta de lujo">Tarjeta de lujo +$180</div>
+                <div class="opt" data-group="extra" data-price="90" data-value="Foto previa al envío">Foto previa al envío +$90</div>
+                <div class="opt" data-group="extra" data-price="350" data-value="Entrega el mismo día">Entrega el mismo día +$350</div>
+              </div>
+            </div>
+
+            <div>
+              <label>Dedicatoria (impresa en tarjeta)</label>
+              <textarea id="dedicatoria" rows="3" placeholder="Escribe un mensaje especial… (máx. 280 caracteres)" maxlength="280"></textarea>
+              <div class="hint"><span id="dedicCount">0</span>/280</div>
+            </div>
+
+            <div class="divider"></div>
+
+            <h3>Datos de entrega</h3>
+            <p class="subtle">Cuéntanos a dónde y cuándo llevamos tu arreglo.</p>
+            <div class="row">
+              <div>
+                <label>Fecha de entrega</label>
+                <input type="date" class="input" id="fechaEntrega">
+                <div id="err-fecha" class="error">Selecciona una fecha válida.</div>
+              </div>
+              <div>
+                <label>Franja horaria</label>
+                <select class="input" id="franja">
+                  <option value="" selected>Selecciona una franja</option>
+                  <option>10:00–13:00</option>
+                  <option>13:00–16:00</option>
+                  <option>16:00–20:00</option>
+                </select>
+                <div id="err-franja" class="error">Selecciona un rango de entrega.</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div>
+                <label>Ciudad</label>
+                <input class="input" id="ciudad" placeholder="CDMX" value="CDMX">
+                <div id="err-ciudad" class="error">Ingresa una ciudad.</div>
+              </div>
+              <div>
+                <label>Código Postal</label>
+                <input class="input" id="cp" placeholder="00000" inputmode="numeric" maxlength="5">
+                <div id="err-cp" class="error">Ingresa un código postal válido.</div>
+              </div>
+            </div>
+
+            <div>
+              <label>Dirección completa</label>
+              <input class="input" id="direccion" placeholder="Calle, número, colonia, referencias">
+              <div id="err-direccion" class="error">Ingresa una dirección.</div>
+            </div>
+
+            <div class="row">
+              <div>
+                <label>Nombre de quien recibe</label>
+                <input class="input" id="destNombre" placeholder="Nombre del destinatario">
+                <div id="err-destNombre" class="error">Ingresa el nombre de la persona que recibe.</div>
+              </div>
+              <div>
+                <label>Teléfono de quien recibe</label>
+                <input class="input" id="destTelefono" placeholder="+52 55 0000 0000" inputmode="tel">
+                <div id="err-destTelefono" class="error">Ingresa un teléfono válido.</div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <h3>Tus datos</h3>
+            <div class="row">
+              <div>
+                <label>Tu nombre</label>
+                <input class="input" id="cliNombre" placeholder="Tu nombre">
+                <div id="err-cliNombre" class="error">Ingresa tu nombre.</div>
+              </div>
+              <div>
+                <label>Tu teléfono</label>
+                <input class="input" id="cliTelefono" placeholder="+52 55 0000 0000" inputmode="tel">
+                <div id="err-cliTelefono" class="error">Ingresa un teléfono válido.</div>
+              </div>
+            </div>
+            <div>
+              <label>Correo electrónico</label>
+              <input class="input" id="cliEmail" type="email" placeholder="tucorreo@ejemplo.com">
+              <div id="err-cliEmail" class="error">Ingresa un correo válido.</div>
+            </div>
+
+            <div style="display:flex; gap:12px; align-items:center; margin-top:8px">
+              <input type="checkbox" id="politicas">
+              <label for="politicas" class="hint">Acepto la <a href="#faq">política de envíos y cambios</a>.</label>
+            </div>
+            <div id="err-politicas" class="error">Debes aceptar nuestras políticas para continuar.</div>
+
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px">
+              <button class="btn btn-primary" onclick="finalizarPedido()">Finalizar pedido por WhatsApp</button>
+              <button class="btn btn-ghost" onclick="previewMessage()">Previsualizar mensaje</button>
+              <span class="hint">El pago se coordina por WhatsApp (transferencia, tarjeta o efectivo contra entrega según zona).</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resumen -->
+        <aside class="summary panel reveal" id="summary">
+          <h3>Resumen</h3>
+          <div class="lineitem"><span class="muted">Paquete</span> <strong id="sum-paquete">Signature (24)</strong></div>
+          <div class="lineitem"><span class="muted">Paleta</span> <span id="sum-color">Ivory</span></div>
+          <div class="lineitem"><span class="muted">Presentación</span> <span id="sum-pres">Caja redonda terciopelo</span></div>
+          <div class="lineitem"><span class="muted">Extras</span> <span id="sum-extras">—</span></div>
+          <div class="lineitem"><span class="muted">Entrega</span> <span id="sum-entrega">—</span></div>
+          <div class="divider"></div>
+          <div class="lineitem"><span class="muted">Subtotal</span> <strong id="sum-sub">$8,900 MXN</strong></div>
+          <div class="lineitem"><span class="muted">Extras</span> <strong id="sum-ex">$0 MXN</strong></div>
+          <div class="lineitem"><span class="muted">Entrega</span> <strong id="sum-envio">$0 MXN</strong></div>
+          <div class="tot"><span>Total</span> <span id="sum-total">$8,900 MXN</span></div>
+          <div class="note">Costos de envío orientativos. Confirmaremos la tarifa exacta según zona y franja.</div>
+          <div style="display:flex; gap:8px; margin-top:6px">
+            <button class="btn btn-dark" onclick="finalizarPedido()">WhatsApp</button>
+            <button class="btn btn-ghost" onclick="copyMessage()">Copiar mensaje</button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+<!-- Gallery -->
+<!--  Gallery  -->
+<section id="galeria">
+  <div class="container">
+    <div class="section-title reveal">
+      <h2>Galería que enamora</h2>
+      <p>Inspiración real: peonías preservadas en paletas suaves, intensas y ediciones mixtas. Cada pieza es única.</p>
+    </div>
+
+    <!--  parallax strips + frosted overlay  -->
+    <div style="position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--shadow)">
+      <!--  strips (same code you already have)  -->
+      <div class="strips" id="stage">
+        <div class="strip"><div class="track" id="strip1" style="--dur:46s"></div></div>
+        <div class="strip"><div class="track" id="strip2" style="--dur:36s;animation-direction:reverse"></div></div>
+        <div class="strip"><div class="track" id="strip3" style="--dur:52s"></div></div>
+      </div>
+
+      <!--  frost layer  -->
+      <div style="position:absolute;inset:0;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background:rgba(255,255,255,.08);pointer-events:none"></div>
+
+      <!--  elegant CTA  -->
+      <div style="position:absolute;inset:0;display:grid;place-content:center;pointer-events:auto">
+        <a href="galeria-completa.html"
+           style="display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:999px;
+                  background:linear-gradient(135deg,#fff 0%,#f7f3ee 100%);color:#1c1713;font-weight:600;font-size:15px;
+                  box-shadow:0 0 0 1px rgba(255,255,255,.6),0 8px 24px rgba(38,32,27,.14),0 0 40px rgba(200,166,106,.45);
+                  transition:.25s ease">
+          Visita nuestra galería
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M5 12h14m-7-7l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+  <section id="testimonios">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Historias reales</h2>
+        <p>Clientes que se enamoraron desde el primer vistazo. La magia de la peonía, ahora por meses.</p>
+      </div>
+      <div class="testi">
+        <div class="quote reveal">
+          <div class="stars">★★★★★</div>
+          <p>“Jamás había visto algo tan hermoso. Mi mamá no puede creer que sigan perfectas después de 3 meses.”</p>
+          <div class="small">— Sofía R.</div>
+        </div>
+        <div class="quote reveal">
+          <div class="stars">★★★★★</div>
+          <p>“El acabado es impecable, huele delicioso y la presentación es de revista. Envío puntual.”</p>
+          <div class="small">— Alejandro V.</div>
+        </div>
+        <div class="quote reveal">
+          <div class="stars">★★★★★</div>
+          <p>“Una obra de arte. Pedí la paleta borgoña y fue un espectáculo en la cena.”</p>
+          <div class="small">— Renata P.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUIDADOS -->
+  <section id="cuidados">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Cuidado y preservación</h2>
+        <p>Peonías reales preservadas con tecnología botánica de última generación. Mantienen su belleza por meses con cuidados mínimos.</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card reveal">
+          <div class="body">
+            <h3>Vida útil</h3>
+            <p class="small">6–12 meses según condiciones del ambiente. Evita luz directa y humedad extrema.</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="body">
+            <h3>Sin agua</h3>
+            <p class="small">No requieren riego. Limpia suavemente el polvo con aire frío o pincel suave.</p>
+          </div>
+        </div>
+        <div class="card reveal">
+          <div class="body">
+            <h3>Sostenibles</h3>
+            <p class="small">Reducen desperdicio y huella de transporte al prolongar su disfrute.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Preguntas frecuentes</h2>
+        <p>Resolvemos tus dudas más comunes antes de comprar.</p>
+      </div>
+      <div class="grid">
+        <div class="faq item reveal" aria-expanded="false">
+          <div class="q" onclick="toggleFaq(this)">¿Entregan el mismo día?</div>
+          <div class="a">Sí, en CDMX y Zona Metropolitana con un costo adicional según zona y horario. Te confirmaremos por WhatsApp.</div>
+        </div>
+        <div class="faq item reveal" aria-expanded="false">
+          <div class="q" onclick="toggleFaq(this)">¿Son flores naturales?</div>
+          <div class="a">Sí, son peonías reales preservadas con una solución botánica que mantiene su textura y color durante meses sin agua.</div>
+        </div>
+        <div class="faq item reveal" aria-expanded="false">
+          <div class="q" onclick="toggleFaq(this)">¿Puedo personalizar colores y presentación?</div>
+          <div class="a">Totalmente. Puedes elegir paleta, presentación, extras y dedicatoria. Ajustamos detalles por WhatsApp.</div>
+        </div>
+        <div class="faq item reveal" aria-expanded="false">
+          <div class="q" onclick="toggleFaq(this)">¿Cómo pago?</div>
+          <div class="a">Transferencia, tarjeta o efectivo contra entrega en zonas seleccionadas. Coordinamos todo por WhatsApp.</div>
+        </div>
+        <div class="faq item reveal" aria-expanded="false">
+          <div class="q" onclick="toggleFaq(this)">Política de cambios y cancelaciones</div>
+          <div class="a">Se aceptan cambios con 24h de anticipación. Cancelaciones sujetas a costos incurridos. Arreglos personalizados no son reembolsables.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="contact">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>Contacto y atención personal</h2>
+        <p>¿Dudas? Nuestro equipo está listo para ayudarte a crear el detalle perfecto.</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="panel reveal">
+          <h3>WhatsApp</h3>
+          <p class="subtle">Escríbenos y obtén atención inmediata.</p>
+          <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap">
+            <a class="btn btn-dark" id="directWhats" target="_blank" rel="noopener">Abrir chat</a>
+            <span class="hint">Horario: Lun–Sáb 9:00–20:00</span>
+          </div>
+        </div>
+        <div class="panel reveal">
+          <h3>Showroom</h3>
+          <p class="subtle">Atención con cita previa.</p>
+          <p class="small">Polanco, CDMX · Calle Flor No. 88</p>
+          <p class="small">hello@maisonpeonia.mx</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container foot-grid">
+      <div>
+        <div class="brand" style="font-size:22px"><span class="mark"></span>Maison Peonía</div>
+        <p class="small" style="margin-top:6px">Luxo floral sostenible con peonías preservadas. Piezas que enamoran en cada pixel y en cada pétalo.</p>
+      </div>
+      <div>
+        <div class="small" style="font-weight:700; color:#3b342f; margin-bottom:8px">Navegación</div>
+  <p class="small"><a href="#paquetes">Paquetes</a> · <a href="#disenador">Diseñador</a> · <a href="galeria-completa.html">Galería</a> · <a href="#faq">FAQ</a></p>
+      </div>
+      <div>
+        <div class="small" style="font-weight:700; color:#3b342f; margin-bottom:8px">Legal</div>
+        <p class="small">© 2025 Maison Peonía. Todos los derechos reservados.</p>
+        <p class="small">Imágenes ilustrativas. Disponibilidad sujeta a temporada y stock.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating summary CTA -->
+  <div class="floating-summary" id="floatingCta" role="dialog" aria-live="polite">
+    <span class="pill" id="floatingItems">24 peonías</span>
+    <div class="sep"></div>
+    <strong id="floatingTotal">$8,900 MXN</strong>
+    <button class="btn" onclick="finalizarPedido()">Finalizar por WhatsApp</button>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Modal Preview -->
+  <div class="modal" id="modal">
+    <div class="box">
+      <div class="header">
+        <strong>Previsualización de mensaje</strong>
+        <button class="btn btn-ghost" onclick="closeModal()">Cerrar</button>
+      </div>
+      <div class="content">
+        <div class="pre" id="previewText"></div>
+        <div style="display:flex; gap:10px; margin-top:12px; flex-wrap:wrap">
+          <button class="btn btn-dark" onclick="finalizarPedido()">Enviar por WhatsApp</button>
+          <button class="btn btn-ghost" onclick="copyMessage()">Copiar mensaje</button>
+        </div>
+        <p class="hint" style="margin-top:10px">Si no se abre WhatsApp, copia el mensaje y envíalo manualmente al número del negocio.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ==============
+    // Configuración
+    // ==============
+    // Reemplaza con el WhatsApp de tu negocio en formato internacional, sin espacios ni guiones.
+    // Ejemplo: México CDMX +52 1 55 1234 5678 => "5215512345678"
+    const BUSINESS_WHATSAPP = "5215512345678";
+    const PRICE_PER_STEM = 390; // Precio por peonía en modo personalizado
+    const PACKAGE_PRICES = {
+      essence: 4900,
+      signature: 8900,
+      grand: 12900,
+      imperial: 24900
+    };
+
+    // Estado global
+    const state = {
+      mode: "paquete",
+      paquete: "signature",
+      color: "Ivory",
+      presentacion: "Caja redonda terciopelo",
+      size: 24,
+      fragancia: "Sin fragancia",
+      mono: "Marfil",
+      extras: [],
+      dedicatoria: "",
+      entrega: { fecha: "", franja: "" },
+      envio: { ciudad: "CDMX", cp: "", direccion: "" },
+      dest: { nombre: "", telefono: "" },
+      cliente: { nombre: "", telefono: "", email: "" },
+      precios: { subtotal: PACKAGE_PRICES.signature, extras: 0, envio: 0, total: PACKAGE_PRICES.signature }
+    };
+
+    // Utilidades
+    const $ = (s, p=document)=>p.querySelector(s);
+    const $$ = (s, p=document)=>Array.from(p.querySelectorAll(s));
+    const formatMoney = n => n.toLocaleString('es-MX',{style:'currency',currency:'MXN', maximumFractionDigits:0});
+    const toast = (msg)=>{ const t = $('#toast'); t.textContent = msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'), 2500) }
+    const todayISO = ()=>{ const d=new Date(); d.setHours(0,0,0,0); return d.toISOString().slice(0,10) }
+    $('#fechaEntrega').min = todayISO();
+
+    // Dedicatoria contador
+    $('#dedicatoria').addEventListener('input', e=>{
+      state.dedicatoria = e.target.value.trim();
+      $('#dedicCount').textContent = state.dedicatoria.length;
+      saveState();
+    });
+
+    // Opciones toggles
+    $$('.opt').forEach(opt=>{
+      opt.addEventListener('click', ()=>{
+        const group = opt.dataset.group;
+        const value = opt.dataset.value;
+        if(group === 'extra'){
+          // toggle multiple
+          const idx = state.extras.findIndex(ex => ex.value===value);
+          if(idx>-1){
+            state.extras.splice(idx,1);
+            opt.dataset.active = "false";
+          }else{
+            state.extras.push({ value, price: Number(opt.dataset.price||0) });
+            opt.dataset.active = "true";
+          }
+        }else{
+          // single select
+          $$('.opt[data-group="'+group+'"]').forEach(o=>o.dataset.active="false");
+          opt.dataset.active = "true";
+          if(group==='mode'){ state.mode = value; if(value==='personalizado'){ $('#packageSelect').value='custom'; } else { if(state.paquete==='custom'){ $('#packageSelect').value='signature'; state.paquete='signature' } } }
+          if(group==='color'){ state.color = value }
+          if(group==='presentacion'){ state.presentacion = value }
+        }
+        recalc();
+      })
+    });
+
+    // Package and size
+    $('#packageSelect').addEventListener('change', e=>{
+      const val = e.target.value;
+      if(val === 'custom'){ state.mode='personalizado'; setActive('mode','personalizado'); }
+      else { state.mode='paquete'; setActive('mode','paquete'); }
+      state.paquete = val;
+      // Ajustar size acorde
+      const sizeMap = { essence:12, signature:24, grand:36, imperial:64, custom:24 };
+      const newSize = sizeMap[val] ?? 24;
+      state.size = newSize;
+      $('#sizeSelect').value = String(newSize);
+      recalc(true);
+      scrollToDesignerIfMobile();
+    });
+
+    $('#sizeSelect').addEventListener('change', e=>{
+      state.size = Number(e.target.value);
+      if(state.mode==='paquete'){
+        // Cambiar a paquete sugerido más cercano
+        const bySize = {12:'essence',24:'signature',36:'grand',64:'imperial'};
+        const pack = bySize[state.size] || 'custom';
+        state.paquete = pack;
+        $('#packageSelect').value = pack;
+        state.mode = pack==='custom' ? 'personalizado' : 'paquete';
+        setActive('mode', state.mode);
+      }
+      recalc(true);
+    });
+
+    $('#fragancia').addEventListener('change', e=>{ state.fragancia = e.target.value; recalc() });
+    $('#mono').addEventListener('change', e=>{ state.mono = e.target.value; recalc() });
+
+    // Entrega y datos
+    $('#fechaEntrega').addEventListener('change', e=>{ state.entrega.fecha = e.target.value; recalc() });
+    $('#franja').addEventListener('change', e=>{ state.entrega.franja = e.target.value; recalc() });
+    $('#ciudad').addEventListener('input', e=>{ state.envio.ciudad = e.target.value; recalc() });
+    $('#cp').addEventListener('input', e=>{ state.envio.cp = e.target.value; recalc() });
+    $('#direccion').addEventListener('input', e=>{ state.envio.direccion = e.target.value; recalc() });
+    $('#destNombre').addEventListener('input', e=>{ state.dest.nombre = e.target.value; });
+    $('#destTelefono').addEventListener('input', e=>{ state.dest.telefono = e.target.value; });
+    $('#cliNombre').addEventListener('input', e=>{ state.cliente.nombre = e.target.value; });
+    $('#cliTelefono').addEventListener('input', e=>{ state.cliente.telefono = e.target.value; });
+    $('#cliEmail').addEventListener('input', e=>{ state.cliente.email = e.target.value; });
+
+    // Precios
+    function recalc(updateFromPackage=false){
+      // Subtotal
+      let subtotal = 0;
+      if(state.mode==='paquete' && state.paquete!=='custom'){
+        subtotal = PACKAGE_PRICES[state.paquete];
+      } else {
+        subtotal = Math.max(12, state.size) * PRICE_PER_STEM;
+      }
+      // Extras
+      const extras = state.extras.reduce((sum,ex)=> sum + (ex.price||0), 0);
+      // Envío orientativo
+      const envio = estimateShipping(state.envio.cp, state.entrega.franja, state.envio.ciudad);
+      const total = subtotal + extras + envio;
+
+      state.precios = { subtotal, extras, envio, total };
+
+      // UI summary
+      $('#sum-paquete').textContent = displayPackageName();
+      $('#sum-color').textContent = state.color;
+      $('#sum-pres').textContent = state.presentacion;
+      $('#sum-extras').textContent = state.extras.length ? state.extras.map(e=>e.value).join(', ') : '—';
+      $('#sum-entrega').textContent = (state.entrega.fecha?formatDate(state.entrega.fecha):'') + (state.entrega.franja?(' · '+state.entrega.franja):'');
+      $('#sum-sub').textContent = formatMoney(subtotal);
+      $('#sum-ex').textContent = formatMoney(extras);
+      $('#sum-envio').textContent = envio ? formatMoney(envio) : '$0 MXN';
+      $('#sum-total').textContent = formatMoney(total);
+      $('#floatingItems').textContent = `${state.size} peonías`;
+      $('#floatingTotal').textContent = formatMoney(total);
+
+      // Floating CTA visible cuando el usuario está lejos del diseñador
+      const showFloating = true;
+      $('#floatingCta').style.display = showFloating ? 'flex' : 'none';
+
+      // Guardar
+      saveState();
+    }
+
+    function displayPackageName(){
+      const map = { essence:'Essence (12)', signature:'Signature (24)', grand:'Grand Amour (36)', imperial:'Imperial Couture (64)', custom:`Personalizado (${state.size})`};
+      return state.mode==='paquete' ? (map[state.paquete] || 'Paquete') : `Personalizado (${state.size})`;
+    }
+
+    function estimateShipping(cp, franja, ciudad){
+      if(!ciudad) return 0;
+      // Estimación simple por CP y franja
+      let base = 250;
+      if(/(11|12|13|14|15|16|17|18|19|20|01|02|03)$/.test((cp||"").trim())) base = 290;
+      if((franja||"").includes('16:00')) base += 40;
+      if((franja||"").includes('10:00')) base += 30;
+      if(!cp) base = 0; // aún sin CP, no estimar
+      return base;
+    }
+
+    function setActive(group, value){
+      $$('.opt[data-group="'+group+'"]').forEach(o=> o.dataset.active = (o.dataset.value===value) ? "true" : "false");
+    }
+
+    // Selección desde Paquetes
+    function selectPackage(key){
+      const select = $('#packageSelect');
+      select.value = key;
+      const sizeMap = { essence:12, signature:24, grand:36, imperial:64 };
+      state.mode = 'paquete';
+      setActive('mode','paquete');
+      state.paquete = key;
+      state.size = sizeMap[key] || 24;
+      $('#sizeSelect').value = String(state.size);
+      recalc(true);
+      // desplazarse
+      document.getElementById('disenador').scrollIntoView({behavior:'smooth', block:'start'});
+      toast('Paquete cargado en el diseñador');
+    }
+
+    function scrollToDesignerIfMobile(){
+      if(window.innerWidth < 900){
+        document.getElementById('disenador').scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    }
+
+    // Validaciones
+    function validar(){
+      let ok = true;
+      // helpers
+      const required = (id, cond, errId)=>{
+        const el = $('#'+id);
+        const showErr = !cond;
+        if(showErr){ el.classList.add('invalid'); $('#'+errId).style.display='block'; ok = false }
+        else { el.classList.remove('invalid'); $('#'+errId).style.display='none' }
+      }
+      required('fechaEntrega', !!state.entrega.fecha && state.entrega.fecha >= todayISO(), 'err-fecha');
+      required('franja', !!state.entrega.franja, 'err-franja');
+      required('ciudad', !!state.envio.ciudad?.trim(), 'err-ciudad');
+      required('cp', /^\d{5}$/.test(state.envio.cp||""), 'err-cp');
+      required('direccion', !!state.envio.direccion?.trim(), 'err-direccion');
+      required('destNombre', !!state.dest.nombre?.trim(), 'err-destNombre');
+      required('destTelefono', /^\+?\d[\d\s-]{7,}$/.test(state.dest.telefono||""), 'err-destTelefono');
+      required('cliNombre', !!state.cliente.nombre?.trim(), 'err-cliNombre');
+      required('cliTelefono', /^\+?\d[\d\s-]{7,}$/.test(state.cliente.telefono||""), 'err-cliTelefono');
+      required('cliEmail', /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(state.cliente.email||""), 'err-cliEmail');
+
+      if(!$('#politicas').checked){ $('#err-politicas').style.display='block'; ok=false } else { $('#err-politicas').style.display='none' }
+
+      return ok;
+    }
+
+    // Mensaje WhatsApp
+    function buildMessage(){
+      const extrasTxt = state.extras.length ? state.extras.map(e=>`• ${e.value} (${formatMoney(e.price)})`).join('\n') : '—';
+      const msg = [
+        'Nueva orden — Maison Peonía',
+        '────────────────────────',
+        `Paquete/Modo: ${displayPackageName()}`,
+        `Paleta: ${state.color}`,
+        `Presentación: ${state.presentacion}`,
+        `Fragancia: ${state.fragancia}`,
+        `Moño: ${state.mono}`,
+        `Extras:\n${extrasTxt}`,
+        '',
+        'Dedicatoria:',
+        state.dedicatoria ? state.dedicatoria : '—',
+        '',
+        'Entrega:',
+        `• Fecha: ${state.entrega.fecha ? formatDate(state.entrega.fecha) : '—'}`,
+        `• Franja: ${state.entrega.franja || '—'}`,
+        `• Ciudad: ${state.envio.ciudad || '—'}`,
+        `• CP: ${state.envio.cp || '—'}`,
+        `• Dirección: ${state.envio.direccion || '—'}`,
+        '',
+        'Destinatario:',
+        `• Nombre: ${state.dest.nombre || '—'}`,
+        `• Teléfono: ${state.dest.telefono || '—'}`,
+        '',
+        'Cliente:',
+        `• Nombre: ${state.cliente.nombre || '—'}`,
+        `• Teléfono: ${state.cliente.telefono || '—'}`,
+        `• Email: ${state.cliente.email || '—'}`,
+        '',
+        'Resumen de importes:',
+        `• Subtotal: ${formatMoney(state.precios.subtotal)}`,
+        `• Extras: ${formatMoney(state.precios.extras)}`,
+        `• Envío (estimado): ${formatMoney(state.precios.envio)}`,
+        `• Total estimado: ${formatMoney(state.precios.total)}`,
+        '',
+        'Método de pago a confirmar por WhatsApp.',
+        'Gracias 💐'
+      ].join('\n');
+      return msg;
+    }
+
+    function formatDate(iso){
+      try{
+        const d = new Date(iso+'T00:00:00');
+        return d.toLocaleDateString('es-MX', { weekday:'long', day:'2-digit', month:'long' });
+      }catch{ return iso }
+    }
+
+    function finalizarPedido(){
+      if(!validar()){ toast('Revisa los campos resaltados'); return }
+      const text = encodeURIComponent(buildMessage());
+      const url = `https://wa.me/${BUSINESS_WHATSAPP}?text=${text}`;
+      window.open(url, '_blank');
+      toast('Abriendo WhatsApp...');
+    }
+
+    function previewMessage(){
+      $('#previewText').textContent = buildMessage();
+      openModal();
+    }
+
+    function copyMessage(){
+      const text = buildMessage();
+      navigator.clipboard.writeText(text).then(()=>{
+        toast('Mensaje copiado al portapapeles');
+      }).catch(()=>{ toast('No se pudo copiar. Selecciona y copia manualmente.') });
+    }
+
+    function openModal(){ $('#modal').style.display='flex' }
+    function closeModal(){ $('#modal').style.display='none' }
+
+    // FAQ toggle
+    function toggleFaq(el){
+      const parent = el.closest('.item');
+      const expanded = parent.getAttribute('aria-expanded') === 'true';
+      parent.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+    }
+    window.toggleFaq = toggleFaq;
+    window.finalizarPedido = finalizarPedido;
+    window.previewMessage = previewMessage;
+    window.copyMessage = copyMessage;
+    window.selectPackage = selectPackage;
+    window.closeModal = closeModal;
+
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target) }
+      })
+    },{threshold:.16});
+    $$('.reveal').forEach(el=> io.observe(el));
+
+    // Parallax-ish hero image
+    window.addEventListener('scroll', ()=>{
+      const m = document.querySelector('.hero .media img');
+      if(!m) return;
+      const y = window.scrollY;
+      m.style.transform = `translateY(${y * -0.02}px) scale(1.03)`;
+    });
+
+    // Tilt on cards
+    $$('.card[data-tilt]').forEach(card=>{
+      let rect;
+      const onEnter = ()=>{ rect = card.getBoundingClientRect() }
+      card.addEventListener('mousemove', (e)=>{
+        if(!rect) onEnter();
+        const x = e.clientX - rect.left, y = e.clientY - rect.top;
+        const rx = ((y/rect.height)-.5)*6, ry = ((x/rect.width)-.5)*-6;
+        card.style.transform = `perspective(700px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-2px)`;
+      });
+      card.addEventListener('mouseleave', ()=>{
+        card.style.transform = '';
+      });
+      card.addEventListener('mouseenter', onEnter);
+    });
+
+    // Floating petals generation
+    function spawnPetals(){
+      const container = $('#petals');
+      const count = 18;
+      for(let i=0;i<count;i++){
+        const s = document.createElement('span');
+        s.className = 'petal';
+        const left = Math.random()*100;
+        const delay = Math.random()*-12;
+        const dur = 10 + Math.random()*8;
+        const size = 8 + Math.random()*10;
+        s.style.left = left + '%';
+        s.style.setProperty('--x', (Math.random()*80-40)+'px');
+        s.style.animationDuration = dur + 's';
+        s.style.animationDelay = delay + 's';
+        s.style.width = size+'px';
+        s.style.height = (size*0.7)+'px';
+        s.style.opacity = 0.45 + Math.random()*0.4;
+        container.appendChild(s);
+      }
+    }
+    spawnPetals();
+
+    // Save / Load state
+    function saveState(){ try{ localStorage.setItem('mp_state', JSON.stringify(state)) }catch{} }
+    function loadState(){
+      try{
+        const raw = localStorage.getItem('mp_state'); if(!raw) return;
+        const s = JSON.parse(raw);
+        Object.assign(state, s);
+        // apply to UI
+        setActive('mode', state.mode);
+        $('#packageSelect').value = state.paquete;
+        $('#sizeSelect').value = String(state.size);
+        setActive('color', state.color);
+        setActive('presentacion', state.presentacion);
+        $('#fragancia').value = state.fragancia;
+        $('#mono').value = state.mono;
+        // extras
+        $$('.opt[data-group="extra"]').forEach(o=>{
+          const v = o.dataset.value;
+          const active = (state.extras||[]).some(ex=> ex.value===v);
+          o.dataset.active = active ? "true" : "false";
+        });
+        $('#dedicatoria').value = state.dedicatoria||"";
+        $('#dedicCount').textContent = (state.dedicatoria||"").length;
+
+        $('#fechaEntrega').value = state.entrega?.fecha || "";
+        $('#franja').value = state.entrega?.franja || "";
+
+        $('#ciudad').value = state.envio?.ciudad || "";
+        $('#cp').value = state.envio?.cp || "";
+        $('#direccion').value = state.envio?.direccion || "";
+
+        $('#destNombre').value = state.dest?.nombre || "";
+        $('#destTelefono').value = state.dest?.telefono || "";
+
+        $('#cliNombre').value = state.cliente?.nombre || "";
+        $('#cliTelefono').value = state.cliente?.telefono || "";
+        $('#cliEmail').value = state.cliente?.email || "";
+      }catch{}
+    }
+    loadState();
+    recalc(true);
+
+    // Direct WhatsApp in contacto
+    const direct = $('#directWhats');
+    direct.href = `https://wa.me/${BUSINESS_WHATSAPP}?text=${encodeURIComponent('Hola, quiero una recomendación de arreglo de peonías preservadas 💐')}`;
+
+    // A11y: focus styles on keyboard
+    document.body.addEventListener('keydown', (e)=>{
+      if(e.key==='Tab'){ document.body.classList.add('outline'); }
+    });
+
+    // Smooth scroll for internal anchors (basic)
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}) }
+      });
+    });
+
+    // ==========
+    // Loader de imágenes con fallback (arregla imágenes que no cargan)
+    // ==========
+    const IMG_PLACEHOLDER = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
+
+    function setupImageLoader(){
+      const supportsIO = 'IntersectionObserver' in window;
+      const imgIO = supportsIO ? new IntersectionObserver((entries)=>{
+        entries.forEach(ent=>{
+          if(ent.isIntersecting){
+            imgIO.unobserve(ent.target);
+            startLoad(ent.target);
+          }
+        })
+      }, {rootMargin:'120px 0px'}) : null;
+
+      const imgs = document.querySelectorAll('img.lazyimg');
+      imgs.forEach(img=>{
+        if(!img.getAttribute('src')) img.src = IMG_PLACEHOLDER;
+        img.dataset.idx = '0';
+        img.loadNext = ()=>loadNext(img);
+        if(img.dataset.priority === 'high' || !supportsIO){
+          startLoad(img);
+        } else {
+          imgIO.observe(img);
+        }
+      });
+
+      function startLoad(img){
+        // Evita recargar si ya está cargada
+        if(img.classList.contains('loaded')) return;
+        loadNext(img);
+      }
+
+      function loadNext(img){
+        const list = (img.dataset.srcs || '').split(/\s*;\s*/).filter(Boolean);
+        const i = parseInt(img.dataset.idx || '0', 10);
+        if(i >= list.length){
+          img.classList.add('failed');
+          return;
+        }
+        const url = list[i];
+        img.onerror = ()=>{
+          img.dataset.idx = String(i+1);
+          loadNext(img);
+        };
+        img.onload = ()=>{
+          img.classList.add('loaded');
+        };
+        // Forzamos no-referrer para evitar bloqueos por Referer
+        img.referrerPolicy = img.getAttribute('referrerpolicy') || 'no-referrer';
+        img.src = url;
+      }
+    }
+    setupImageLoader();
+    /* =====  parallax-strips loader  ===== */
+(() => {
+  const FLORAL_QUERY = 'floral,flower,arrangement,bouquet,floristry,wedding,centerpiece';
+  const src = (w, h, sig) => `https://source.unsplash.com/random/${w}x${h}/?${FLORAL_QUERY}&sig=${sig}`;
+  const fall = (w, h, seed) => `https://picsum.photos/seed/flowers-${seed}/${w}/${h}`;
+  const imgTag = (srcUrl, w, h, seed, alt) =>
+    `<img src="${srcUrl}" alt="${alt}" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+      onerror="this.onerror=null;this.src='${fall(w,h,seed)}';" />`;
+
+  const names = [
+    "Aurora Rosé","Luna de Peonías","Jardín Esmeralda","Ópera de Tulipanes","Néctar Real",
+    "Cielo de Dalias","Brisa de Ranúnculos","Susurro de Orquídeas","Hydra Pastel","Amor Rubí",
+    "Vogue Silvestre","Nube de Azahar","Alba de Rosas","Coral Chic","Luxe Magnolia",
+    "Eclipse Pastel","Fusión Botánica","Mar de Lavanda","Dorado Sutil","Ballet de Lirios",
+    "Muse Rosé","Campos de Abril","Nacarado Floral","Sakura Deluxe"
+  ];
+  const price = () => [39,59,79,99,129,149,179,199,229,259,299][Math.floor(Math.random()*11)];
+
+  const catalog = Array.from({length: 24}, (_,i)=>({
+    id:i+1, title:names[i%names.length], price:price(),
+    landscape:src(1600,1000,i+11)
+  }));
+
+  function buildStrip(track, items){
+    const tile = it => `
+      <div class="tile2">
+        ${imgTag(it.landscape,1600,1000,it.id,it.title)}
+        <div class="ov"><div>${it.title} • $${it.price}</div></div>
+      </div>`;
+    track.innerHTML = items.map(tile).join('') + items.map(tile).join('');
+
+    track.addEventListener('mousemove', e=>{
+      const r = track.getBoundingClientRect();
+      track.style.setProperty('--x', (((e.clientX-r.left)/r.width)*100)+'%');
+      track.style.setProperty('--y', (((e.clientY-r.top)/r.height)*100)+'%');
+    });
+    let base = parseFloat(getComputedStyle(track).animationDuration)||40;
+    track.addEventListener('mouseenter', ()=> track.style.setProperty('--dur', Math.max(12, base*0.55)+'s'));
+    track.addEventListener('mouseleave', ()=> track.style.setProperty('--dur', base+'s'));
+  }
+
+  buildStrip(document.querySelector('#strip1'), catalog.slice(0,8));
+  buildStrip(document.querySelector('#strip2'), catalog.slice(8,16));
+  buildStrip(document.querySelector('#strip3'), catalog.slice(16,24));
+})();
+/* =====  end parallax-strips  ===== */
+  </script>
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Maison Peonía",
+    "image":"https://loremflickr.com/1200/800/peony,luxury",
+    "description":"Arreglos Ultra Premium con peonías preservadas que duran meses. Envíos el mismo día en CDMX.",
+    "address":{
+      "@type":"PostalAddress",
+      "addressLocality":"CDMX",
+      "streetAddress":"Calle Flor No. 88, Polanco",
+      "postalCode":"11560",
+      "addressCountry":"MX"
+    },
+    "telephone":"+52 1 55 1234 5678",
+    "url":"https://ejemplo.maisonpeonia.mx",
+    "openingHours":"Mo-Sa 09:00-20:00",
+    "priceRange":"$$$"
+  }
+  /* ==========  parallax strips (igual que archivo 6)  ========== */
+(() => {
+  const $ = (sel, ctx = document) => ctx.querySelector(sel);
+  const FLORAL_QUERY = 'floral,flower,arrangement,bouquet,floristry,wedding,centerpiece';
+  const src = (w, h, sig) => `https://source.unsplash.com/random/${w}x${h}/?${FLORAL_QUERY}&sig=${sig}`;
+  const fall = (w, h, seed) => `https://picsum.photos/seed/flowers-${seed}/${w}/${h}`;
+  const imgTag = (srcUrl, w, h, seed, alt) =>
+    `<img src="${srcUrl}" alt="${alt}" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+      onerror="this.onerror=null;this.src='${fall(w,h,seed)}';" />`;
+
+  const names = [
+    "Aurora Rosé","Luna de Peonías","Jardín Esmeralda","Ópera de Tulipanes","Néctar Real",
+    "Cielo de Dalias","Brisa de Ranúnculos","Susurro de Orquídeas","Hydra Pastel","Amor Rubí",
+    "Vogue Silvestre","Nube de Azahar","Alba de Rosas","Coral Chic","Luxe Magnolia",
+    "Eclipse Pastel","Fusión Botánica","Mar de Lavanda","Dorado Sutil","Ballet de Lirios",
+    "Muse Rosé","Campos de Abril","Nacarado Floral","Sakura Deluxe"
+  ];
+  const price = () => [39,59,79,99,129,149,179,199,229,259,299][Math.floor(Math.random()*11)];
+
+  const catalog = Array.from({length:24}, (_,i)=>({
+    id:i+1, title:names[i%names.length], price:price(), landscape:src(1600,1000,i+11)
+  }));
+
+  function buildStrip(track, items){
+    const tile = it => `
+      <div class="tile2">
+        ${imgTag(it.landscape,1600,1000,it.id,it.title)}
+        <div class="ov"><div>${it.title} • $${it.price}</div></div>
+      </div>`;
+    track.innerHTML = items.map(tile).join('') + items.map(tile).join('');
+
+    track.addEventListener('mousemove', e=>{
+      const r = track.getBoundingClientRect();
+      track.style.setProperty('--x', (((e.clientX-r.left)/r.width)*100)+'%');
+      track.style.setProperty('--y', (((e.clientY-r.top)/r.height)*100)+'%');
+    });
+    let base = parseFloat(getComputedStyle(track).animationDuration)||40;
+    track.addEventListener('mouseenter', ()=> track.style.setProperty('--dur', Math.max(12, base*0.55)+'s'));
+    track.addEventListener('mouseleave', ()=> track.style.setProperty('--dur', base+'s'));
+  }
+
+  buildStrip(document.querySelector('#strip1'), catalog.slice(0,8));
+  buildStrip(document.querySelector('#strip2'), catalog.slice(8,16));
+  buildStrip(document.querySelector('#strip3'), catalog.slice(16,24));
+})();
+/* ==========  end parallax strips  ========== */
+  </script>
+
+  <script>
+    // Mobile menu overlay: build structure and attach handlers (only active on small screens)
+    (function(){
+      const btn = document.getElementById('mobileMenuBtn');
+      const overlay = document.getElementById('mobileMenuOverlay');
+      if(!btn || !overlay) return;
+
+      // Build panel content (keeps premium styling consistent)
+      const panel = document.createElement('div'); panel.className='panel';
+      panel.innerHTML = `
+        <div style="display:flex;align-items:center;justify-content:space-between">
+          <div class="brand"><span class="mark" aria-hidden="true"></span> Maison Peonía</div>
+          <button id="mobileMenuClose" class="btn btn-ghost" aria-label="Cerrar menú">✕</button>
+        </div>
+        <div style="margin-top:12px">
+          <div class="badge-inline">Envíos el mismo día en CDMX</div>
+          <div class="badge-inline">Peonías que duran meses</div>
+        </div>
+        <nav class="menu" aria-label="Menú principal" style="margin-top:14px">
+          <a href="#paquetes">Paquetes</a>
+          <a href="#disenador">Diseñador</a>
+          <a href="galeria-completa.html">Galería</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="top-actions" style="margin-top:18px">
+          <a class="btn btn-dark" href="#contacto">WhatsApp</a>
+          <a class="btn btn-ghost" href="#disenador">Diseñar</a>
+        </div>
+      `;
+
+      overlay.appendChild(panel);
+
+      // Focus trap helpers
+      let previouslyFocused = null;
+      const getTabbable = (root) => Array.from(root.querySelectorAll('a,button,input,select,textarea,[tabindex]:not([tabindex="-1"])')).filter(el=>!el.disabled && el.offsetParent !== null);
+
+      function openMenu(){
+        previouslyFocused = document.activeElement;
+        overlay.style.display = 'flex';
+        overlay.setAttribute('aria-hidden','false');
+        btn.setAttribute('aria-expanded','true');
+        // animation: add class or inline animation
+        const panelEl = overlay.querySelector('.panel');
+        if(panelEl){ panelEl.style.animationName = 'slideInRight'; }
+
+        const tabbable = getTabbable(overlay);
+        if(tabbable.length) tabbable[0].focus();
+
+        // trap focus
+        function onKey(e){
+          if(e.key !== 'Tab') return;
+          const t = getTabbable(overlay);
+          if(t.length===0) return;
+          const first = t[0];
+          const last = t[t.length-1];
+          if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+          else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+        }
+        overlay._onKey = onKey;
+        document.addEventListener('keydown', onKey);
+      }
+
+      function closeMenu(){
+        const panelEl = overlay.querySelector('.panel');
+        if(panelEl){ panelEl.style.animationName = 'slideOutRight'; }
+        // wait for animation to end (approx) then hide
+        setTimeout(()=>{
+          overlay.style.display='none';
+          overlay.setAttribute('aria-hidden','true');
+          btn.setAttribute('aria-expanded','false');
+          // restore focus
+          if(previouslyFocused && previouslyFocused.focus) previouslyFocused.focus();
+        }, 220);
+        // remove key handler
+        if(overlay._onKey) document.removeEventListener('keydown', overlay._onKey);
+      }
+
+      btn.addEventListener('click', ()=> openMenu());
+      overlay.addEventListener('click', (e)=>{ if(e.target===overlay) closeMenu(); });
+      overlay.querySelector('#mobileMenuClose')?.addEventListener('click', ()=> closeMenu());
+
+      // Close on Escape (global)
+      document.addEventListener('keydown', (e)=>{ if(e.key==='Escape' && overlay.style.display==='flex'){ closeMenu() } });
+
+      // Ensure the mobile button only shows on small screens (redundant safety)
+      function updateBtn(){ if(window.innerWidth <= 720){ btn.style.display='inline-flex' } else { btn.style.display='none'; overlay.style.display='none'; btn.setAttribute('aria-expanded','false') } }
+      window.addEventListener('resize', updateBtn); updateBtn();
+    })();
+  </script>
+
+    <!-- topbarDetails script removed: topbar toggle control removed, panel will remain static/visual on mobile only -->
+</body>
+</html>

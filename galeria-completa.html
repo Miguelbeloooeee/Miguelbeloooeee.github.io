@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Galería — Maison Peonía</title>
+  <meta name="description" content="Galería completa de peonías preservadas — inspiración y colecciones Maison Peonía." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --bg:#f4efe9; --card:#ffffff; --ink:#171514; --muted:#6f6864; --line:#e8e1da; --accent:#c8a66a; --maxw:1200px;
+      --radius-lg:18px; --shadow: 0 15px 45px rgba(38,32,27,.12);
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:radial-gradient(1200px 600px at 10% 0%, #f8f2ed 0%, var(--bg) 50%, #eee7df 100%);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+    /* Top nav (keeps same look) */
+    .nav{border-bottom:1px solid var(--line);background: color-mix(in oklab, #fff 70%, #f7f3ee 30%);backdrop-filter: blur(8px) saturate(120%);position:sticky;top:0;z-index:40}
+    .nav .row{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:22px;display:flex;align-items:center;gap:10px}
+    .brand .mark{width:34px;height:34px;border-radius:10px;background:conic-gradient(from 220deg at 50% 50%, #e9cbd7,#f3e7d7,#dcc6a5);border:1px solid rgba(199,166,106,.25)}
+    .menu{display:flex;gap:18px;color:#4d4743}
+    .menu a{padding:8px 10px;border-radius:10px}
+    .menu a:hover{background:rgba(231,222,211,.6)}
+
+    header.hero{padding:28px 0 10px;background:transparent}
+    .hero h1{font-family:"Cormorant Garamond",serif;font-size:28px;margin:6px 0}
+    .lead{color:var(--muted);margin:0}
+
+    /* Masonry / Pinterest style */
+    .masonry-wrap{padding:36px 0}
+    .masonry{
+      column-count: 4;
+      column-gap: 18px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .tile{
+      break-inside: avoid-column;
+      margin-bottom: 18px;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background:var(--card);
+      border:1px solid var(--line);
+      box-shadow: var(--shadow);
+      transition: transform .22s ease, box-shadow .22s ease;
+    }
+    .tile:hover{transform:translateY(-6px)}
+    .tile img{width:100%;height:auto;display:block;object-fit:cover}
+    .tile .meta{padding:12px 14px}
+    .tile .title{font-family:"Cormorant Garamond",serif;font-size:18px;margin:0 0 6px}
+    .tile .subtitle{font-size:13px;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:1100px){ .masonry{column-count:3} }
+    @media (max-width:820px){ .masonry{column-count:2} .nav .row{padding:12px} }
+    @media (max-width:520px){ .masonry{column-count:1} .brand{font-size:18px} }
+
+    /* Modal preview */
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center;z-index:300;padding:18px}
+    .modal .box{background:var(--card);border-radius:14px;max-width:980px;width:100%;max-height:90vh;overflow:auto;border:1px solid var(--line)}
+    .modal .imgwrap{padding:10px}
+    .modal img{width:100%;height:auto;display:block}
+    .modal .meta{padding:12px 16px}
+    .close{position:absolute;right:18px;top:18px;background:#fff;border:1px solid var(--line);padding:8px 10px;border-radius:10px;cursor:pointer}
+
+    /* small utilities */
+    .center{display:grid;place-items:center}
+    .btn{padding:10px 14px;border-radius:999px;background:linear-gradient(180deg,#f6e9d1,#e7d2a9);border:1px solid rgba(200,166,106,.6);cursor:pointer}
+    .hint{color:var(--muted);font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <div class="container row">
+      <a class="brand" href="online_viewer_net.htm"><span class="mark" aria-hidden="true"></span> Maison Peonía</a>
+      <nav class="menu" aria-label="Principal">
+        <a href="online_viewer_net.htm#paquetes">Paquetes</a>
+        <a href="online_viewer_net.htm#disenador">Diseñador</a>
+        <a href="online_viewer_net.htm#galeria">Galería</a>
+        <a href="online_viewer_net.htm#contacto">Contacto</a>
+      </nav>
+      <div style="display:flex;gap:10px;align-items:center">
+        <a class="btn" href="online_viewer_net.htm#disenador">Diseñar mi arreglo</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero container">
+    <h1>Galería completa — Peonías Maison</h1>
+    <p class="lead">Inspiración en formato Masonry. Imágenes de referencia obtenidas desde la web; si deseas usar imágenes propias, reemplázalas en el código.</p>
+  </header>
+
+  <main class="container masonry-wrap">
+    <div class="masonry" id="masonry">
+      <!-- Tiles injected by script -->
+    </div>
+  </main>
+
+  <div class="center" style="padding:18px 0">
+    <a class="hint" href="online_viewer_net.htm">← Volver a la tienda</a>
+  </div>
+
+  <!-- Modal preview -->
+  <div class="modal" id="modal">
+    <div class="box">
+      <button class="close" id="closeModal">Cerrar</button>
+      <div class="imgwrap" id="modalImgWrap"></div>
+      <div class="meta" id="modalMeta"></div>
+    </div>
+  </div>
+
+  <script>
+    // Simple gallery data (images from Unsplash / Loremflickr). Seeds ensure variety.
+    const N = 36;
+    const GALLERY = Array.from({length:N}, (_,i)=>({
+      id: i+1,
+      title: ['Aurora','Luna','Blush','Ivory','Rosa','Borgoña','Couture','Essence','Signature'][i%9] + ' ' + (i+1),
+      src: `https://source.unsplash.com/random/800x${600 + (i%5)*80}/?peony,peonies,flower&sig=${i+11}`
+    }));
+
+    const masonry = document.getElementById('masonry');
+
+    function createTile(it){
+      const div = document.createElement('article');
+      div.className = 'tile';
+      div.innerHTML = `\n        <figure style=\"margin:0;cursor:pointer\">\n          <img loading=\"lazy\" decoding=\"async\" src=\"${it.src}\" alt=\"${it.title}\"/>\n        </figure>\n        <div class=\"meta\">\n          <h3 class=\"title\">${it.title}</h3>\n          <div class=\"subtitle\">Peonías preservadas — Colección Maison</div>\n        </div>`;
+      div.querySelector('figure').addEventListener('click', ()=> openModal(it));
+      return div;
+    }
+
+    // Render all tiles
+    GALLERY.forEach(g=> masonry.appendChild(createTile(g)));
+
+    // Modal
+    const modal = document.getElementById('modal');
+    const modalImgWrap = document.getElementById('modalImgWrap');
+    const modalMeta = document.getElementById('modalMeta');
+    const closeModalBtn = document.getElementById('closeModal');
+    function openModal(it){
+      modalImgWrap.innerHTML = `<img src=\"${it.src.replace('/800x','/1200x')}\" alt=\"${it.title}\"/>`;
+      modalMeta.innerHTML = `<strong style=\"display:block;font-family: 'Cormorant Garamond', serif; font-size:20px; margin-bottom:6px\">${it.title}</strong><div style=\"color:var(--muted)\">Peonías preservadas — colección Maison. ID: ${it.id}</div>`;
+      modal.style.display = 'flex';
+    }
+    closeModalBtn.addEventListener('click', ()=> modal.style.display='none');
+    modal.addEventListener('click', (e)=>{ if(e.target===modal) modal.style.display='none' });
+
+    // Accessibility: keyboard close
+    document.addEventListener('keydown', (e)=>{ if(e.key==='Escape') modal.style.display='none' });
+
+    // Image fallback: replace broken with picsum
+    document.querySelectorAll('img').forEach(img=>{
+      img.addEventListener('error', ()=>{ if(!img.dataset.fallback){ img.dataset.fallback='1'; img.src = `https://picsum.photos/seed/peony-${Math.floor(Math.random()*99999)}/800/600` } });
+    });
+
+    // Slight progressive reveal
+    setTimeout(()=>{ document.querySelectorAll('.tile').forEach((t,i)=> setTimeout(()=> t.style.opacity=1, i*30)) }, 120);
+  </script>
+</body>
+</html>
